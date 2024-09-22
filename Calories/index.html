@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calorie Management</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<h1>Calorie Management Application</h1>
+<div>
+  <form id="calorie-form">
+    <input type="number" id="calories" placeholder="Enter calories" required>
+    <select id="category" required>
+      <option value="BREAKFAST">Breakfast</option>
+      <option value="LUNCH">Lunch</option>
+      <option value="DINNER">Dinner</option>
+      <option value="OTHER">Other</option>
+    </select>
+    <input type="text" id="description" placeholder="Description" required>
+    <button type="submit">Add Entry</button>
+  </form>
+</div>
+<div>
+  <h2>Calorie Report</h2>
+  <input type="month" id="report-month">
+  <button id="generate-report">Generate Report</button>
+  <div id="report"></div>
+</div>
+<script src="js/idb.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
+
+
