@@ -18,6 +18,7 @@ const idb = {
       };
     });
   },
+  //comment
 
   addCalories: (entry) => {
     return new Promise(async (resolve, reject) => {
