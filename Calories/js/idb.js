@@ -1,4 +1,4 @@
-const idb = {
+let idb = {
   openCaloriesDB: (dbName, version) => {
     return new Promise((resolve, reject) => {
       const request = indexedDB.open(dbName, version);
@@ -18,7 +18,6 @@ const idb = {
       };
     });
   },
-
 
   addCalories: (entry) => {
     return new Promise(async (resolve, reject) => {
