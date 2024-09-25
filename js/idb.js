@@ -1,3 +1,4 @@
+
 let idb = {
   openCaloriesDB: (dbName, version) => {
     return new Promise((resolve, reject) => {
